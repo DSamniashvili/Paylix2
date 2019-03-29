@@ -28,86 +28,155 @@
 <body>
 
     <div class="container">
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Paylix</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Paylix</button>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal fade modal1" id="myModal1" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-body d-flex flex-column">
-                        <div class="header_part">
-                            <button type="button" class="close d-none d-md-block close-btn" data-dismiss="modal"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="d-block d-md-none stick-btn" data-dismiss="modal"></button>
+                    <div class="modal-content-1">
+                        <div class="modal-body d-flex flex-column">
+                            <div class="header_part">
+                                <button type="button" class="close d-none d-md-block close-btn" data-dismiss="modal"><i
+                                        class="fas fa-times"></i></button>
+                                <button type="button" class="d-block d-md-none stick-btn" data-dismiss="modal"></button>
 
-                        </div>
-
-                        <div class="main_part d-flex flex-column justify-content-center">
-                            <div
-                                class="main_part_first d-flex flex-row justify-content-start align-items-center d-none d-md-flex">
-                                <div class="myModal-main-first-image d-none d-md-flex">
-                                    <img src="./Paylix_Plugin_Design/Assets/group-12.png" alt="phone icon" />
-                                </div>
-                                <div class="first_text d-none d-md-block">
-                                    <h3>Secure & Quick Checkout</h3>
-                                    <p>Pay with your credit card using your smartphone.</p>
-                                </div>
                             </div>
-                            <div
-                                class="main_part_second d-flex flex-row justify-content-between align-items-center pt-4">
-                                <div class="wrap_left d-flex flex-row justify-content-center align-items-center pb-2">
-                                    <div class="arrow_down pr-2"><i class="fas fa-angle-down "></i></div>
-                                    <div class="second_image"><img src="./Paylix_Plugin_Design/Assets/flag.png"
-                                            alt="flag" /></div>
-                                    <div class="second_num_prefix">
-                                        <span class="d-none d-md-block">+972</span>
-                                        <span class="line d-none">+972 |</span>
+
+                            <div class="main_part d-flex flex-column justify-content-center">
+                                <div
+                                    class="main_part_first d-flex flex-row justify-content-start align-items-center d-none d-md-flex">
+                                    <div class="myModal-main-first-image d-none d-md-flex">
+                                        <img src="./Paylix_Plugin_Design/Assets/group-12.png" alt="phone icon" />
+                                    </div>
+                                    <div class="first_text d-none d-md-block">
+                                        <h3>Secure & Quick Checkout</h3>
+                                        <p>Pay with your credit card using your smartphone.</p>
                                     </div>
                                 </div>
-                                <form class="wrap_right d-flex flex-row justify-content-between">
-                                    <input type="number" name="number" placeholder="Your phone Number"
-                                        class="wrap_right_input pb-2"><br>
-                                    <button type="button" value="Submit" class="submit_btn d-none d-md-block" onclick="addClassFunc()">
-                                        <img src="./Paylix_Plugin_Design/Assets/pathCopy.png" alt="arrow right" />
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="d-md-none mobile-button position-absolute mr-5 mt-1 d-flex justify-content-center align-items-center"><i class="fas fa-arrow-right"></i></div>
+                                <div
+                                    class="main_part_second d-flex flex-row justify-content-between align-items-center pt-4">
+                                    <div
+                                        class="wrap_left d-flex flex-row justify-content-center align-items-center pb-2">
+                                        <div class="arrow_down pr-2"><i class="fas fa-angle-down "></i></div>
+                                        <div class="second_image"><img src="./Paylix_Plugin_Design/Assets/flag.png"
+                                                alt="flag" /></div>
+                                        <div class="second_num_prefix">
+                                            <span class="d-none d-md-block">+972</span>
+                                            <span class="line d-none">+972 |</span>
+                                        </div>
+                                    </div>
+                                    <form class="wrap_right d-flex flex-row justify-content-between">
+                                        <input type="number" name="number" placeholder="Your phone Number"
+                                            class="wrap_right_input pb-2"><br>
+                                        <button type="button" value="Submit" class="submit_btn d-none d-md-block"
+                                            onclick="changePage1()">
+                                            <img src="./Paylix_Plugin_Design/Assets/pathCopy.png" alt="arrow right" />
+                                        </button>
+                                    </form>
+                                </div>
+                                <div
+                                    class="d-md-none mobile-button position-absolute mr-5 mt-1 d-flex justify-content-center align-items-center"
+                                    onclick="changePage1()">
+                                    <i class="fas fa-arrow-right"></i></div>
 
+                            </div>
+                            <div
+                                class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5">
+                                <div class="logo logo_on_mobile">
+                                    <img src="./Paylix_Plugin_Design//Assets/group-2-grey.png" alt="Paylix Logo" />
+                                </div>
+                                <div class="slogan d-md-none"><span>Touch. Pay. Done</span></div>
+                                <div
+                                    class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex">
+                                    <button class="footer-question1 d-none d-md-flex"><u>Need Help?</u></button>
+                                    <button class="footer_question2 d-none d-md-flex"><u>Terms & Polices</u></button>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <!-- Mobile --> 
-
-                        <div
-                            class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5">
-                            <div class="logo logo_on_mobile">
-                                <img src="./Paylix_Plugin_Design//Assets/group-2-grey.png" alt="Paylix Logo" />
-                            </div>
-                            <div class="slogan d-md-none"><span>Touch. Pay. Done</span></div>
-                            <div class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex">
-                                <button class="footer-question1 d-none d-md-flex"><u>Need Help?</u></button>
-                                <button class="footer_question2 d-none d-md-flex"><u>Terms & Polices</u></button>
-                            </div>
-                        </div>
-                        <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div> -->
                     </div>
 
+
+
+                    <!-- Second Modal -->
+                    <div class="modal-content-2 hidden">
+                        <div class="modal-body d-flex flex-column">
+                            <div class="header_part">
+                                <button type="button" class="close d-none d-md-block close-btn" data-dismiss="modal"><i
+                                        class="fas fa-times"></i></button>
+                                <button type="button" class="d-block d-md-none stick-btn" data-dismiss="modal"></button>
+
+                            </div>
+
+                            <div class="main_part d-flex flex-column justify-content-center">
+                                <div
+                                    class="main_part_first d-flex flex-row justify-content-start align-items-center d-none d-md-flex">
+                                    <div class="myModal-main-first-image d-none d-md-flex">
+                                        <img src="./Paylix_Plugin_Design/Assets/group-12.png" alt="phone icon" />
+                                    </div>
+                                    <div class="first_text d-none d-md-block">
+                                        <h3>Second Page</h3>
+                                        <p>Pay with your credit card using your smartphone.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="main_part_second d-flex flex-row justify-content-between align-items-center pt-4">
+                                    <div
+                                        class="wrap_left d-flex flex-row justify-content-center align-items-center pb-2">
+                                        <div class="arrow_down pr-2"><i class="fas fa-angle-down "></i></div>
+                                        <div class="second_image"><img src="./Paylix_Plugin_Design/Assets/flag.png"
+                                                alt="flag" /></div>
+                                        <div class="second_num_prefix">
+                                            <span class="d-none d-md-block">+972</span>
+                                            <span class="line d-none">+972 |</span>
+                                        </div>
+                                    </div>
+                                    <form class="wrap_right d-flex flex-row justify-content-between">
+                                        <input type="number" name="number" placeholder="Your phone Number"
+                                            class="wrap_right_input pb-2"><br>
+                                        <button type="button" value="Submit" class="submit_btn d-none d-md-block"
+                                            onclick="">
+                                            <img src="./Paylix_Plugin_Design/Assets/pathCopy.png" alt="arrow right" />
+                                        </button>
+                                    </form>
+                                </div>
+                                <div
+                                    class="d-md-none mobile-button position-absolute mr-5 mt-1 d-flex justify-content-center align-items-center"
+                                    onclick="">
+                                    <i class="fas fa-arrow-right"></i></div>
+
+                            </div>
+
+                            <div
+                                class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5">
+                                <div class="logo logo_on_mobile">
+                                    <img src="./Paylix_Plugin_Design//Assets/group-2-grey.png" alt="Paylix Logo" />
+                                </div>
+                                <div class="slogan d-md-none"><span>second. Pay. Done</span></div>
+                                <div
+                                    class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex">
+                                    <button class="footer-question1 d-none d-md-flex"><u>Need Help?</u></button>
+                                    <button class="footer_question2 d-none d-md-flex"><u>Terms & Polices</u></button>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div> -->
+                        </div>
+
+
+                    </div>
+
+
                 </div>
+                <!-- modal content end -->
             </div>
-            <!-- End of Modal -->
+
 
         </div>
+        <!-- modal end -->
+
+        <script src="./scripts/script.js"></script>
+    </div>
 
 </body>
-
-<!--  for mobile
-<div
-class="logo_slogan d-flex flex-row justify-content-between align-items-center d-none d-sm-block">
-<div class="myModal-main-first-image">
-    <img src="./Paylix_Plugin_Design/Assets/group-12.png" alt="phone icon" />
-</div>
-<div class="slogan"><span>Touch. Pay. Done</span></div>
-</div> -->
