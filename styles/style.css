@@ -1,13 +1,31 @@
-.modal-content {
+.modal-content-1 {
     width: 404px;
     height: 231px;
     margin: 0 auto;
 }
 
-.modal-content-1 {
+
+.modal-content-2 {
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+
+/* .modal-content-1 {
     width: 100%;
     height: 100%;
-}
+} */
+
+/* .modal-content__2 {
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+} */
+/* .modal-content-2 {
+    width: 430px;
+    height: 430px;
+} */
 
 .close-btn {
     border: none;
@@ -24,6 +42,7 @@
 .close-btn>i {
     font-size: 12px;
     opacity: 1;
+    margin-bottom: 1px;
 }
 
 .stick-btn {
@@ -59,11 +78,16 @@ input::placeholder {
 .submit_btn {
     border-radius: 20px;
     border: none;
+    background-color: #e4e3e6;
+}
+
+.submit_btn:hover,
+.submit_btn:active {
     background-color: #6c44f5;
 }
 
 .submit_btn>img {
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .wrap_right_input {
@@ -125,6 +149,11 @@ input::placeholder {
 
     top: 12rem;
     right: 0;
+}
+
+.mobile-button:active {
+    background-color: #6c44f5;
+    color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
