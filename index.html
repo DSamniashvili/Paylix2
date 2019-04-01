@@ -1,140 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Bootstrap Modal Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+      integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-
-<body>
-
+  <body>
     <div class="container">
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Paylix</button>
+      <button
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#myModal1"
+      >
+        Paylix
+      </button>
 
-        <!-- Modal -->
-        <div class="modal fade modal1" id="myModal1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered">
-                <!-- First Modal Start -->
-                <div class="modal-content modal-content-1">
-                    <div class="modal-body d-flex flex-column">
-                        <div class="header_part">
-                            <button type="button" class="close d-none d-md-block close-btn" data-dismiss="modal"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="d-block d-md-none stick-btn" data-dismiss="modal"></button>
+      <!-- Modal -->
+      <div class="modal fade modal1" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+          <!-- First Modal Start -->
+          <div class="modal-content modal-content-1">
+            <div class="modal-body d-flex flex-column">
+              <div class="header_part">
+                <button
+                  type="button"
+                  class="close d-none d-md-block close-btn"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <button
+                  type="button"
+                  class="d-block d-md-none stick-btn"
+                  data-dismiss="modal"
+                ></button>
+              </div>
 
-                        </div>
-
-                        <div class="main_part d-flex flex-column justify-content-center">
-                            <div
-                                class="main_part_first d-flex flex-row justify-content-start align-items-center d-none d-md-flex">
-                                <div class="myModal-main-first-image d-none d-md-flex">
-                                    <img src="./Paylix_Plugin_Design/Assets/group-12.png" alt="phone icon" />
-                                </div>
-                                <div class="first_text d-none d-md-block">
-                                    <h3>Secure & Quick Checkout</h3>
-                                    <p>Pay with your credit card using your smartphone.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="main_part_second d-flex flex-row justify-content-between align-items-center pt-4">
-                                <div class="wrap_left d-flex flex-row justify-content-center align-items-center pb-2">
-                                    <div class="arrow_down pr-2"><i class="fas fa-angle-down "></i></div>
-                                    <div class="second_image"><img src="./Paylix_Plugin_Design/Assets/flag.png"
-                                            alt="flag" /></div>
-                                    <div class="second_num_prefix">
-                                        <span class="d-none d-md-block pl-2">+972</span>
-                                        <span class="line d-none">+972 |</span>
-                                    </div>
-                                </div>
-                                <form class="wrap_right d-flex flex-row justify-content-between">
-                                    <input type="number" name="number" placeholder="Your phone Number"
-                                        class="wrap_right_input pb-2"><br>
-                                    <button type="button" value="Submit" class="submit_btn d-none d-md-block"
-                                        onclick="changePage1()">
-                                        <img src="./Paylix_Plugin_Design/Assets/pathCopy.png" alt="arrow right" />
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="d-md-none mobile-button position-absolute mr-5 mt-1 d-flex justify-content-center align-items-center"
-                                onclick="changePage1()">
-                                <i class="fas fa-arrow-right"></i></div>
-
-                        </div>
-                        <div
-                            class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5">
-                            <div class="logo logo_on_mobile">
-                                <img src="./Paylix_Plugin_Design//Assets/group-2-grey.png" alt="Paylix Logo" />
-                            </div>
-                            <div class="slogan d-md-none"><span>Touch. Pay. Done</span></div>
-                            <div
-                                class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex">
-                                <button class="footer-question1 d-none d-md-flex"><u>Need Help?</u></button>
-                                <button class="footer_question2 d-none d-md-flex"><u>Terms & Polices</u></button>
-                            </div>
-                        </div>
-                    </div>
-
+              <div class="main_part d-flex flex-column justify-content-center">
+                <div
+                  class="main_part_first d-flex flex-row justify-content-start align-items-center d-none d-md-flex"
+                >
+                  <div class="myModal-main-first-image d-none d-md-flex">
+                    <img
+                      src="./Paylix_Plugin_Design/Assets/group-12.png"
+                      alt="phone icon"
+                    />
+                  </div>
+                  <div class="first_text d-none d-md-block">
+                    <h3>Secure & Quick Checkout</h3>
+                    <p>Pay with your credit card using your smartphone.</p>
+                  </div>
                 </div>
-            <!-- First modal end -->
-
-
-
-                <!-- Second modal -->
-                <div class="modal-content modal-content-2 hidden">
-                    <div class="modal-body d-flex flex-column">
-                        <div class="header_part">
-                            <button type="button" class="close d-none d-md-block close-btn" data-dismiss="modal"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="d-block d-md-none stick-btn" data-dismiss="modal"></button>
-
-                        </div>
-
-                        <div class="main_part d-flex flex-column justify-content-center">
-                            <div class="first"></div> 
-                            
-                            
-                        </div>
-                        <div
-                            class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5">
-                            <div class="logo logo_on_mobile">
-                                <img src="./Paylix_Plugin_Design//Assets/group-2-grey.png" alt="Paylix Logo" />
-                            </div>
-                            <div class="slogan d-md-none"><span>2Nd. Pay. Done</span></div>
-                            <div
-                                class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex">
-                                <button class="footer-question1 d-none d-md-flex"><u>Need Help?</u></button>
-                                <button class="footer_question2 d-none d-md-flex"><u>Terms & Polices</u></button>
-                            </div>
-                        </div>
+                <div
+                  class="main_part_second d-flex flex-row justify-content-between align-items-center pt-4"
+                >
+                  <div
+                    class="wrap_left d-flex flex-row justify-content-center align-items-center pb-2"
+                  >
+                    <div class="arrow_down pr-2">
+                      <i class="fas fa-angle-down "></i>
                     </div>
-                    <!-- </div> -->
-
+                    <div class="second_image">
+                      <img
+                        src="./Paylix_Plugin_Design/Assets/flag.png"
+                        alt="flag"
+                      />
+                    </div>
+                    <div class="second_num_prefix">
+                      <span class="d-none d-md-block pl-2">+972</span>
+                      <span class="line d-none">+972 |</span>
+                    </div>
+                  </div>
+                  <form
+                    class="wrap_right d-flex flex-row justify-content-between"
+                  >
+                    <input
+                      type="number"
+                      name="number"
+                      placeholder="Your phone Number"
+                      class="wrap_right_input pb-2"
+                    /><br />
+                    <button
+                      type="button"
+                      value="Submit"
+                      class="submit_btn d-none d-md-block"
+                      onclick="changePage1()"
+                    >
+                      <img
+                        src="./Paylix_Plugin_Design/Assets/pathCopy.png"
+                        alt="arrow right"
+                      />
+                    </button>
+                  </form>
                 </div>
-                <!-- Second modal end -->
+                <div
+                  class="d-md-none mobile-button position-absolute mr-5 mt-1 d-flex justify-content-center align-items-center"
+                  onclick="changePage1()"
+                >
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div
+                class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5"
+              >
+                <div class="logo logo_on_mobile">
+                  <img
+                    src="./Paylix_Plugin_Design//Assets/group-2-grey.png"
+                    alt="Paylix Logo"
+                  />
+                </div>
+                <div class="slogan d-md-none">
+                  <span>Touch. Pay. Done</span>
+                </div>
+                <div
+                  class="questions d-flex flex-row justify-content-between align-items-center d-none d-md-flex"
+                >
+                  <button class="footer-question1 d-none d-md-flex">
+                    <u>Need Help?</u>
+                  </button>
+                  <button class="footer_question2 d-none d-md-flex">
+                    <u>Terms & Polices</u>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- First modal end -->
 
+          <!-- Second modal -->
+          <div class="modal-content modal-content-2 hidden">
+            <div class="modal-body d-flex flex-column">
+              <div
+                class="header_part d-flex flex-row justify-content-between header-part-second"
+              >
+                <div class="logo logo_on_mobile d-none d-md-block">
+                  <img
+                    src="./Paylix_Plugin_Design//Assets/logo.png"
+                    alt="Paylix Logo"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="close d-none d-md-block close-btn close-btn-1"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <button
+                  type="button"
+                  class="d-block d-md-none stick-btn"
+                  data-dismiss="modal"
+                ></button>
+              </div>
+              <div
+                class="background-image-second d-none d-md-flex justify-content-center align-items-end"
+              >
+                <img
+                  src="./Paylix_Plugin_Design/Assets/group-3.png"
+                  alt="half-phone-image"
+                />
+              </div>
+
+              <div
+                class="second-half-white d-flex flex-column justify-content-start align-items-center position-absolute p-5"
+              >
+                <button
+                  class="checkMark position-absolute d-none d-md-block"
+                  onClick="changePage2()"
+                >
+                  <img
+                    src="./Paylix_Plugin_Design//Assets/yes-copy.png"
+                    alt="checkmark"
+                  />
+                </button>
+                <h1 class="heading d-none d-md-block">Check your smartphone</h1>
+                <p class="successfully-sent successfully-sent-1 mt-2">
+                  Payment request successfully sent to: +972 54280008.
+                </p>
+                <p class="successfully-sent successfully-sent-2">
+                  For data security purposes this session will stay active for
+                  three minutes only.
+                </p>
+                <div class="countdown mt-4 d-none d-md-block">
+                  <h2>02:59</h2>
+                </div>
+                <div
+                  class=" d-flex flex-row justify-content-between check-buttons mt-4"
+                >
+                  <button onClick="changePage3()"><u>Send Again</u></button>
+                  <button onclick="changePage2()"><u>Cancel Request</u></button>
+                </div>
+              </div>
+
+              <div
+                class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5 d-md-none"
+              >
+                <div class="logo logo_on_mobile">
+                  <img
+                    src="./Paylix_Plugin_Design//Assets/group-2-grey.png"
+                    alt="Paylix Logo"
+                  />
+                </div>
+                <div class="time d-md-none">
+                  <span>02:59</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second modal end -->
+
+          <!-- Third modal -->
+          <div class="modal-content modal-content-3 hidden">
+            <div class="modal-body d-flex flex-column">
+              <div class="header_part">
+                <button
+                  type="button"
+                  class="close d-none d-md-block close-btn close-btn-1"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <button
+                  type="button"
+                  class="d-block d-md-none stick-btn"
+                  data-dismiss="modal"
+                ></button>
+              </div>
+              <div
+                class="background-image-third d-none d-md-flex justify-content-center align-items-end"
+              >
+                <img src="./Paylix_Plugin_Design//Assets/bitmap-copy.png" />
+              </div>
+              <div class="third_texts">
+                <h1 class="greeting_third pb-3">Hi, Nice to meet you!</h1>
+                <p class="text_third third_first d-none d-md-block pb-3">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <p class="text_third third_second">
+                  when an unknown printer took a galley of type and scrambled it
+                  to make a type specimen book.
+                </p>
+              </div>
+              <div
+              class="background-image-third-mobile d-xs-flex d-sm-flex d-md-none justify-content-center align-items-end"
+            >
+              <img src="./Paylix_Plugin_Design/Assets/bitmap-copy.png" />
             </div>
 
-        </div>
-        <script src="./scripts/script.js"></script>
-    </div>
+              <div
+                class="bottom_part d-flex flex-row justify-content-between align-items-center pl-3 pr-3 pt-5 bottom_part_third"
+              >
+                <div class="logo logo_on_mobile">
+                  <img
+                    src="./Paylix_Plugin_Design/Assets/logo.png"
+                    alt="Paylix Logo"
+                  />
+                </div>
+              </div>
 
-</body>
+
+              <div class="grey_background d-xs-flex d-sm-flex d-md-none justify-content-center align-items-center">
+                <img src="./Paylix_Plugin_Design/Assets/app-store-small.png" alt="app store">
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Third modal end -->
+
+
+
+           <!-- Fourth modal -->
+           <div class="modal-content modal-content-4 hidden">
+            <div class="modal-body d-flex flex-column">
+              <div class="header_part">
+                <button
+                  type="button"
+                  class="close d-none d-md-block close-btn close-btn-1"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <button
+                  type="button"
+                  class="d-block d-md-none stick-btn"
+                  data-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="d-flex flex-column justify-content-center align-items-center mt-5 cart-content">
+                <div class="cartImage">
+                  <img src="./Paylix_Plugin_Design/Assets/group-4-copy.png" alt="approved cart" />
+                </div>
+                <h1>Congratulations!</h1>
+                <p class="pt-2">Purchase Successfully done!</p>
+                <button class="cart-button mt-4 pt-2.5 pl-4 pb-2.5 pr-4 " onClick="showDeclined()">
+                  <span>Invite your friends to join Paylix</span>
+                </button>
+
+              </main>
+
+          
+            </div>
+          </div>
+        </div>
+         <!-- Fourth modal end -->
+
+
+
+         <!-- Fifth modal -->
+         <div class="modal-content modal-content-5 hidden">
+          <div class="modal-body d-flex flex-column">
+            <div class="header_part">
+              <button
+                type="button"
+                class="close d-none d-md-block close-btn close-btn-1"
+                data-dismiss="modal"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <button
+                type="button"
+                class="d-block d-md-none stick-btn"
+                data-dismiss="modal"
+              ></button>
+            </div>
+
+            <div
+            class="d-flex flex-column justify-content-center align-items-center cart-content mt-5 cart-content-declined">
+            <div class="cartImage">
+              <img src="./Paylix_Plugin_Design/Assets/group-3-copy-3.png" alt="declined cart" />
+            </div>
+            <h1>Sorry, Payment Failed</h1>
+            <p class="pt-1">Payment declined due to:Insufficient Funds</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fifth modal end -->
+
+      </div>
+      <script src="./scripts/script.js"></script>
+    </div>
+    </div>
+  </body>
+</html>
+

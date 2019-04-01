@@ -1,0 +1,36 @@
+.cart-content>h1 {
+    color: #2f2638;
+    font-family: 'Semibold';
+    font-size: 1.4rem;
+    margin: 2vh 0 .5vh 0;
+}
+
+.cart-content>p {
+    color: #97979d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.cart-button {
+    background-color: #fff;
+    border: 3px solid #f4f4f4;
+    border-radius: 45px;
+    color: #534c5b;
+    padding: 1.5vh 2vh;
+}
+
+.cart-button>span {
+    font-family: 'Semibold';
+    font-size: 0.9rem;
+}
+
+.cart-button:hover {
+    background-color: #f6f6f6;
+}
+
+/* @media only screen and (max-width: 767px) {
+    .modal-content-4,
+    .modal-content-5 {
+        height: 45vh;
+    }
+} */

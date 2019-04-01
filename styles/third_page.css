@@ -1,0 +1,77 @@
+.modal-content-3 {
+    background-color: #6c44f5;
+}
+
+.background-image-third {
+    position: absolute;
+    top: 42px;
+    left: 50%;
+}
+
+.third_first {
+    width: 80%;
+}
+
+.third_second {
+    width: 60%;
+}
+
+.text_third {
+    font-family: 'Regular';
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    color: #fff;
+}
+.bottom_part_third {
+    position: absolute;
+    bottom: 1rem;
+}
+.greeting_third {
+    font-family: 'Regular';
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.grey_background {
+    background: #353239;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    bottom: 0;
+    margin-left: -16px;
+}
+.grey_background > img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+
+.background-image-third-mobile {
+    position: fixed;
+    bottom: 11vh;
+}
+.background-image-third-mobile > img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767px) {
+    .third_texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_third {
+        width: 90% !important;
+        text-align: center !important;
+    }
+    .bottom_part_third > .logo_on_mobile {
+        position: fixed;
+        bottom: 13vh;
+    }
+}
+
+

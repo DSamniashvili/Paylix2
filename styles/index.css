@@ -2,6 +2,8 @@
 @import url("./reset_button.css");
 @import url("./reset.css");
 @import url("./style.css");
+@import url("./third_page.css");
+@import url("./fourth_page.css");
 
 .hidden {
     display: none;
