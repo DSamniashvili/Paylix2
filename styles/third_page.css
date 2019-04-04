@@ -26,6 +26,9 @@
     position: absolute;
     bottom: 1rem;
 }
+.logo > img {
+    width: 100px;
+}
 .greeting_third {
     font-family: 'Regular';
     font-size: 1.3rem;

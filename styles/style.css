@@ -2,8 +2,24 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {  
    display: none;
 }
+input {
+    outline: none !important;
+}
 button {
     cursor: pointer;
+    border: none !important;
+    outline: none !important;
+}
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input[type="button"]
+{
+    border: none;
+    outline: none;
 }
 
 .modal-content-1 {
@@ -21,7 +37,12 @@ button {
     height: 430px;
 }
 
-.close-btn {
+.close-btn > img {
+    width: 18px;
+    height: auto;
+}
+
+/* .close-btn {
     border: none;
     background-color: #c6c4c4 !important;
     color: #37343a;
@@ -32,8 +53,8 @@ button {
     opacity: .7;
     line-height: 8px;
     font-weight: 400;
-}
-.close-btn-1 {
+} */
+/* .close-btn-1 {
     color: #fff;
     background-color: rgba(240,240,240, .5);
 }
@@ -41,7 +62,7 @@ button {
     font-size: 12px;
     opacity: 1;
     margin-bottom: 1px;
-}
+} */
 
 .stick-btn {
     width: 70px;
@@ -126,9 +147,9 @@ input::placeholder {
     color: #4c4752;
 }
 
-/* .logo {
-    width: 30%
-} */
+.logo > img {
+    width: 100px;
+}
 
 .questions {
     width: 50%;
