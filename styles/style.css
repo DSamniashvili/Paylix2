@@ -7,12 +7,10 @@ input {
 }
 button {
     cursor: pointer;
-    border: none !important;
     outline: none !important;
 }
 .close:not(:disabled):not(.disabled) {
     cursor: pointer;
-    border: none;
     outline: none;
 }
 
@@ -41,28 +39,6 @@ input[type="button"]
     width: 18px;
     height: auto;
 }
-
-/* .close-btn {
-    border: none;
-    background-color: #c6c4c4 !important;
-    color: #37343a;
-
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    opacity: .7;
-    line-height: 8px;
-    font-weight: 400;
-} */
-/* .close-btn-1 {
-    color: #fff;
-    background-color: rgba(240,240,240, .5);
-}
-.close-btn > i {
-    font-size: 12px;
-    opacity: 1;
-    margin-bottom: 1px;
-} */
 
 .stick-btn {
     width: 70px;
@@ -139,7 +115,6 @@ input::placeholder {
 
 .second_image>img {
     width: 25px;
-    /* height: 25px; */
 }
 
 .second_num_prefix {
@@ -155,7 +130,6 @@ input::placeholder {
     width: 50%;
     color: #3298fc;
     font-family: 'Open Sans', sans-serif;
-    /* font-weight: bold; */
     font-size: 0.8rem;
 }
 
@@ -235,7 +209,6 @@ input::placeholder {
 
     .line {
         display: block !important;
-        /* width: 50px; */
     }
 
     .wrap_right_input {
