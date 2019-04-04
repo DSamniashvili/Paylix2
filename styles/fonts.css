@@ -15,3 +15,8 @@
     font-size: 14pt;
     src: url('../Fonts/gilroy-semibold.otf');
 }
+@font-face {
+    font-family: 'Medium';
+    font-size: 14pt;
+    src: url('../Fonts/gilroy-medium.otf');
+}

@@ -17,7 +17,7 @@
 }
 
 .text_third {
-    font-family: 'Regular';
+    font-family: 'Medium';
     font-size: 0.8rem;
     line-height: 1.4rem;
     color: #fff;
@@ -30,7 +30,7 @@
     width: 100px;
 }
 .greeting_third {
-    font-family: 'Regular';
+    font-family: 'Semibold';
     font-size: 1.3rem;
     color: #fff;
 }
